@@ -23,6 +23,8 @@ var Hogan = require('hogan.js');
 var jwt = require('jsonwebtoken');
 var mongoose = require('mongoose');
 app.use(express.json());
+
+var Port = process.env.PORT || 1802;
 //require("./uploads/service/")
 // var template = fs.readFileSync('./view/index.hbs', 'utf-8');
 // var compileTemplate = Hogan.compile(template);
@@ -902,7 +904,7 @@ app.get('/api/getBlockedUserForAdmin', (req, res) => {
 	});
 });
 
-app.listen(1802, function() {
+app.listen(Port, function() {
 	console.log('Working on port 1802');
 });
 
