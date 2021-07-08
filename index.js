@@ -390,7 +390,7 @@ app.post('/contactUs', (req, res) => {
 		} else {
 			res.send({
 				code: 200,
-				data: 'Contact Us data is added SuccessFully'
+				data: 'We have your data saved reach out soon'
 			});
 		}
 	})
