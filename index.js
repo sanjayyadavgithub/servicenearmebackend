@@ -185,7 +185,7 @@ app.post('/addService', (req, res) => {
 					} else {
 						res.send({
 							code: 200,
-							data: 'Service is added SuccessFully'
+							data: 'Service is added SuccessFully in databse'
 						});
 					}
 				});
